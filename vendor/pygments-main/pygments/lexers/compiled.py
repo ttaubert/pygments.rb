@@ -211,7 +211,7 @@ class CppLexer(CFamilyLexer):
              r'private|protected|public|reinterpret_cast|'
              r'restrict|static_cast|template|this|throw|throws|'
              r'typeid|typename|using|virtual|'
-             r'uint8_t|UINT8_MAX|void|'
+             r'uint8_t|UINT8_MAX|void|uint32_t|uint16_t|'
              r'constexpr|nullptr|decltype|thread_local|'
              r'alignas|alignof|static_assert|noexcept|override|final)\b', Keyword),
             (r'(char16_t|char32_t)\b', Keyword.Type),
@@ -412,7 +412,8 @@ class SawLexer(RegexLexer):
             (r'/(\\\n)?[*](.|\n)*?[*](\\\n)?/', Comment.Multiline),
             (r'\b(llvm_load_module|llvm_extract|llvm_pure|prove_print|let'
              r'|time|llvm_var|llvm_int|llvm_ensure_eq|llvm_verify_tactic'
-             r'|llvm_ptr|take|drop|where|llvm_verify|do|zero'
+             r'|llvm_ptr|take|drop|where|llvm_verify|do|zero|import|print'
+             r'|fresh_symbolic|llvm_symexec|abstract_symbolic'
              r')\b', Keyword),
             (r'"(\\\\|\\"|[^"])*"', String.Double),
             (r"'(\\\\|\\'|[^'])*'", String.Single),
