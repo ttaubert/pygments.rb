@@ -415,6 +415,7 @@ class SawLexer(RegexLexer):
              r'|time|llvm_var|llvm_int|llvm_ensure_eq|llvm_verify_tactic'
              r'|llvm_ptr|take|drop|where|llvm_verify|do|zero|import|print'
              r'|fresh_symbolic|llvm_symexec|abstract_symbolic'
+             r'|pmult|pmod|reverse|fin'
              r')\b', Keyword),
             (r'"(\\\\|\\"|[^"])*"', String.Double),
             (r"'(\\\\|\\'|[^'])*'", String.Single),
