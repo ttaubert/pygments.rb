@@ -212,7 +212,7 @@ class CppLexer(CFamilyLexer):
              r'restrict|static_cast|template|this|throw|throws|'
              r'typeid|typename|using|virtual|'
              r'uint8_t|UINT8_MAX|void|uint32_t|uint16_t|'
-             r'uint64_t|uint128_t|unsigned|'
+             r'uint64_t|uint128_t|unsigned|bool|'
              r'constexpr|nullptr|decltype|thread_local|'
              r'alignas|alignof|static_assert|noexcept|override|final)\b', Keyword),
             (r'(char16_t|char32_t)\b', Keyword.Type),
